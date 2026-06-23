@@ -1,11 +1,13 @@
 package com.daniel.alertajogos.model;
 
+import java.math.BigDecimal;
+
 public class Jogo {
     private String titulo;
-    private double precoSugerido;  // esta usando double mais futuramente ira usar o BigDecimal
-    private String status; // depois iremos usar o Enum
+    private BigDecimal precoSugerido;  // esta usando double mais futuramente ira usar o BigDecimal
+    private StatusJogo status; // depois iremos usar o Enum
 
-    public Jogo(String titulo, double precoSugerido, String status) {
+    public Jogo(String titulo, BigDecimal precoSugerido, StatusJogo status) {
         this.titulo = titulo;
         this.precoSugerido = precoSugerido;
         this.status = status;
@@ -13,8 +15,8 @@ public class Jogo {
 
     //Getters
     public String getTitulo() {return titulo;}
-    public double getPrecoSugerido() {return precoSugerido;}
-    public String getStatus() {return status;}
+    public BigDecimal getPrecoSugerido() {return precoSugerido;}
+    public StatusJogo getStatus() {return status;}
 }
 
 
